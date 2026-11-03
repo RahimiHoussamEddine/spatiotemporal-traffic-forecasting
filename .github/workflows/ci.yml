@@ -21,9 +21,9 @@ jobs:
           .venv/bin/python -m pip install --no-deps --no-build-isolation -e .
       - name: Acquire and validate public source data
         run: make prepare
-      - name: Train using the validation block and evaluate the locked test once
-        run: make train evaluate
+      - name: Fit using fit and validation blocks; preserve locked-test report
+        run: make train
       - name: Tests and static checks
         run: make test quality
       - name: Interactive application smoke test
-        run: python scripts/smoke_app.py
+        run: make smoke-app
