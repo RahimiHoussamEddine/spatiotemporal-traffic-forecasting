@@ -1,0 +1,201 @@
+{
+  "selected_alpha": {
+    "own_ridge": 1000.0,
+    "graph_ridge": 1000.0,
+    "graph_robust_ridge": 1000.0
+  },
+  "lag_candidates": [
+    {
+      "lag_slot": 0,
+      "validation_mae": 0.11525029511173057,
+      "validation_rmse": 0.1540062762304742
+    },
+    {
+      "lag_slot": 1,
+      "validation_mae": 0.1070963147485022,
+      "validation_rmse": 0.14512985263909328
+    },
+    {
+      "lag_slot": 2,
+      "validation_mae": 0.09839371076331999,
+      "validation_rmse": 0.13554814993227635
+    },
+    {
+      "lag_slot": 3,
+      "validation_mae": 0.09011149855251781,
+      "validation_rmse": 0.1255777275170635
+    },
+    {
+      "lag_slot": 4,
+      "validation_mae": 0.08243124837135943,
+      "validation_rmse": 0.11575814263150848
+    },
+    {
+      "lag_slot": 5,
+      "validation_mae": 0.0744139433874241,
+      "validation_rmse": 0.10576240407356466
+    },
+    {
+      "lag_slot": 6,
+      "validation_mae": 0.06512317533906616,
+      "validation_rmse": 0.09412820313388977
+    },
+    {
+      "lag_slot": 7,
+      "validation_mae": 0.0554760627935157,
+      "validation_rmse": 0.08180381038938543
+    },
+    {
+      "lag_slot": 8,
+      "validation_mae": 0.046811351731171125,
+      "validation_rmse": 0.07066779223813068
+    },
+    {
+      "lag_slot": 9,
+      "validation_mae": 0.03827803025997017,
+      "validation_rmse": 0.05950577255344926
+    }
+  ],
+  "selected_lag_slot": 9,
+  "candidates": {
+    "own_ridge": [
+      {
+        "alpha": 0.01,
+        "validation_clean_rmse": 0.05205902446831768
+      },
+      {
+        "alpha": 0.1,
+        "validation_clean_rmse": 0.05205865251371599
+      },
+      {
+        "alpha": 1.0,
+        "validation_clean_rmse": 0.052054942935283115
+      },
+      {
+        "alpha": 10.0,
+        "validation_clean_rmse": 0.05201881915794048
+      },
+      {
+        "alpha": 100.0,
+        "validation_clean_rmse": 0.05173543775283907
+      },
+      {
+        "alpha": 1000.0,
+        "validation_clean_rmse": 0.05131650212224946
+      },
+      {
+        "alpha": 10000.0,
+        "validation_clean_rmse": 0.057042369507916905
+      },
+      {
+        "alpha": 100000.0,
+        "validation_clean_rmse": 0.0911678675533516
+      },
+      {
+        "alpha": 1000000.0,
+        "validation_clean_rmse": 0.16671945750058934
+      }
+    ],
+    "graph_ridge": [
+      {
+        "alpha": 0.01,
+        "validation_clean_rmse": 0.05188724234708461
+      },
+      {
+        "alpha": 0.1,
+        "validation_clean_rmse": 0.0518869303641869
+      },
+      {
+        "alpha": 1.0,
+        "validation_clean_rmse": 0.05188381927079892
+      },
+      {
+        "alpha": 10.0,
+        "validation_clean_rmse": 0.05185354093647362
+      },
+      {
+        "alpha": 100.0,
+        "validation_clean_rmse": 0.05161585357124762
+      },
+      {
+        "alpha": 1000.0,
+        "validation_clean_rmse": 0.051185574899717236
+      },
+      {
+        "alpha": 10000.0,
+        "validation_clean_rmse": 0.05587854440284903
+      },
+      {
+        "alpha": 100000.0,
+        "validation_clean_rmse": 0.086709554200308
+      },
+      {
+        "alpha": 1000000.0,
+        "validation_clean_rmse": 0.155323365823838
+      }
+    ],
+    "graph_robust_ridge": [
+      {
+        "alpha": 0.01,
+        "validation_clean_rmse": 0.05395170566248913,
+        "validation_20pct_outage_rmse": 0.0860370036993905,
+        "selection_objective_mean_rmse": 0.06999435468093981
+      },
+      {
+        "alpha": 0.1,
+        "validation_clean_rmse": 0.0539516046112876,
+        "validation_20pct_outage_rmse": 0.08603691609601016,
+        "selection_objective_mean_rmse": 0.06999426035364888
+      },
+      {
+        "alpha": 1.0,
+        "validation_clean_rmse": 0.05395059595913654,
+        "validation_20pct_outage_rmse": 0.08603604148714403,
+        "selection_objective_mean_rmse": 0.06999331872314028
+      },
+      {
+        "alpha": 10.0,
+        "validation_clean_rmse": 0.0539406892988746,
+        "validation_20pct_outage_rmse": 0.08602743365979605,
+        "selection_objective_mean_rmse": 0.06998406147933532
+      },
+      {
+        "alpha": 100.0,
+        "validation_clean_rmse": 0.05385742388420498,
+        "validation_20pct_outage_rmse": 0.08595350333337902,
+        "selection_objective_mean_rmse": 0.069905463608792
+      },
+      {
+        "alpha": 1000.0,
+        "validation_clean_rmse": 0.05368109466589653,
+        "validation_20pct_outage_rmse": 0.08574316684514477,
+        "selection_objective_mean_rmse": 0.06971213075552066
+      },
+      {
+        "alpha": 10000.0,
+        "validation_clean_rmse": 0.05662220654197701,
+        "validation_20pct_outage_rmse": 0.08923664288100876,
+        "selection_objective_mean_rmse": 0.07292942471149289
+      },
+      {
+        "alpha": 100000.0,
+        "validation_clean_rmse": 0.079164180351696,
+        "validation_20pct_outage_rmse": 0.11589359803246099,
+        "selection_objective_mean_rmse": 0.0975288891920785
+      },
+      {
+        "alpha": 1000000.0,
+        "validation_clean_rmse": 0.13903963699762623,
+        "validation_20pct_outage_rmse": 0.15886019574305651,
+        "selection_objective_mean_rmse": 0.14894991637034138
+      }
+    ]
+  },
+  "block_lengths": {
+    "model_fit": 882,
+    "parameter_selection": 189,
+    "interval_calibration": 190,
+    "locked_test": 840
+  },
+  "robust_selection_rule": "For graph_robust_ridge, select alpha by the mean of clean and fixed 20% sensor-outage validation RMSE. Other Ridge alphas use clean validation RMSE."
+}

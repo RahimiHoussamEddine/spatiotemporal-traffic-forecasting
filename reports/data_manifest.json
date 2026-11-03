@@ -1,0 +1,54 @@
+{
+  "source": "UCI Machine Learning Repository, Traffic Flow Forecasting (dataset 734)",
+  "source_url": "https://archive.ics.uci.edu/dataset/734/traffic%2Bflow%2Bforecasting-1",
+  "download_url": "https://archive.ics.uci.edu/static/public/734/traffic%2Bflow%2Bforecasting-1.zip",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "creator": "Liang Zhao",
+  "source_archive_sha256": "b09ebe53ec44228bfd008d35fb34d12174b5523f7a735d159d9eea326163bc45",
+  "source_archive_bytes": 4398562,
+  "prepared_arrays_sha256": "6b110d72609363ac4fe6b3d4fb15d5b353b71d54c77a8ea26f1ed441ae4ae600",
+  "time_order_note": "The source provides separate contiguous train and test sequences. The source paper describes the earlier span as training and the later span as testing. The paper's 2017-01-02 to 2017-02-01 date range, the bundled DOCX train/test date labels, and the 2,101 quarter-hour sample count (2,100 intervals would span 21 days 21 hours) do not reconcile. The arrays have no timestamps, so this project preserves their published order and does not claim exact calendar boundaries.",
+  "feature_count_note": "UCI describes 47 feature groups, while the downloaded MATLAB matrices have 48 columns; the page describes 36 sensors, while the paper's dataset table lists 37 road segments and the matrices have 36 nodes. The first ten columns are historical traffic inputs; all remaining columns are preserved without unsupported labels.",
+  "dimensions": {
+    "x_train": [
+      1261,
+      36,
+      48
+    ],
+    "y_train": [
+      1261,
+      36
+    ],
+    "x_test": [
+      840,
+      36,
+      48
+    ],
+    "y_test": [
+      840,
+      36
+    ],
+    "adjacency": [
+      36,
+      36
+    ]
+  },
+  "training_samples": 1261,
+  "locked_test_samples": 840,
+  "nodes": 36,
+  "features_per_node": 48,
+  "historical_traffic_features": 10,
+  "remaining_encoded_features": 38,
+  "adjacency_edges_undirected": 43,
+  "nodes_with_no_published_neighbors": 0,
+  "min_degree": 1,
+  "max_degree": 7,
+  "normalized_target_range_train": [
+    0.0,
+    1.0
+  ],
+  "normalized_target_range_test": [
+    0.0,
+    0.9981317141522653
+  ]
+}

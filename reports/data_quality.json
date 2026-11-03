@@ -1,0 +1,9 @@
+{
+  "archive_integrity": "ZIP CRC and pinned SHA-256 passed",
+  "schema_validation": "passed",
+  "finite_value_validation": "passed",
+  "adjacency_validation": "passed",
+  "missing_value_count": 0,
+  "source_metadata_discrepancy": "UCI describes 47 features and 36 sensors; MATLAB arrays contain 48 columns and 36 nodes, while the paper lists 37 segments. The paper date range and bundled DOCX labels do not reconcile with 2,101 quarter-hour rows.",
+  "raw_and_prepared_arrays_committed": false
+}

@@ -1,0 +1,28 @@
+name: traffic-forecasting-ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  quality-and-evaluation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.lock.txt
+      - name: Install pinned environment
+        run: |
+          python -m pip install -r requirements.lock.txt
+          python -m pip install --no-deps --no-build-isolation -e .
+      - name: Acquire and validate public source data
+        run: make prepare
+      - name: Train using the validation block and evaluate the locked test once
+        run: make train evaluate
+      - name: Tests and static checks
+        run: make test quality
+      - name: Interactive application smoke test
+        run: python scripts/smoke_app.py
